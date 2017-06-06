@@ -1,0 +1,149 @@
+ #context-back image,
+
+    #context-forward image,
+
+    #context-reload image,
+
+    #context-stop image,
+
+    #context-bookmarkpage image{
+
+       display:none !important;
+
+    }
+
+ #context-back:after,
+
+    #context-forward:after,
+
+    #context-reload:after,
+
+    #context-stop:after,
+
+    #context-bookmarkpage:after{
+
+       content: attr(aria-label) !important;
+
+    }
+
+  #context-navigation{
+    
+
+       -moz-box-orient: vertical !important;
+ margin-left: 6px !important; /* optional */
+  }
+   #context-navigation > .menuitem-iconic {
+
+      -moz-box-pack: start !important;
+border-color: transparent!important;
+   
+    }
+/* Small Borders */
+
+menupopup {
+
+    border: 0px solid #AAA;
+
+}
+
+#contentAreaContextMenu * {
+   -moz-appearance: none !important;
+
+    background-color:rgba(0,0,0,.08) !important;
+
+   margin-top: 2px !important;
+
+    margin-bottom: 2px !important;
+   border: transparent!important;
+   
+}
+
+#contentAreaContextMenu menuitem[disabled="true"],
+
+#contentAreaContextMenu menuitem[disabled="true"] + menuseparator,
+
+menuitem[disabled="true"]
+
+{ 
+
+  /*display: none !important; */
+
+  color: rgba(255,255,255,.7)  !important;
+
+}
+
+
+
+
+
+
+
+menupopup > menu[_moz-menuactive="true"],
+
+menupopup > menuitem[_moz-menuactive="true"],
+
+popup > menu[_moz-menuactive="true"],
+
+popup > menuitem[_moz-menuactive="true"] 
+
+{
+
+  color:  rgba(255,255,255,.8)  !important;  
+
+}
+
+menupopup > menu:hover,
+
+menupopup > menuitem:hover,
+
+popup > menu, popup > menuitem:hover
+
+{
+
+    font-weight: normal !important;
+
+    color: rgba(255,255,255,.9) !important;
+
+    /* color: highlighttext !important; */
+
+}
+
+
+
+#contentAreaContextMenu menuseparator {
+
+    /*-moz-appearance: none !important;*/
+
+    padding-top: 0px !important;
+
+    padding-bottom: 5px !important;
+
+    border-top: 0px solid #009999 !important;
+
+    border-bottom: 1px  solid rgba(255,255,255,.2) !important;
+
+    margin-top: 2px !important;
+
+    margin-bottom: 2px !important;
+
+    margin-left: 0 !important; /* optional */
+    background: transparent !important;
+}
+
+
+
+#tabContextMenu * {
+ border-color: transparent!important;
+   
+
+}
+
+
+
+#placesContext * {
+ background: transparent!important;
+   border-color: transparent!important;
+    
+
+}
+
